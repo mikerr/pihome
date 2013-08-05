@@ -1,5 +1,9 @@
 #!/usr/bin/python
 import wolframalpha
+
+# sudo apt-get install python-setuptools
+# sudo easy_install wolframalpha
+
 import sys
 #Get a free API key here http://products.wolframalpha.com/api/
 #I may disable this key if I see lots of abuse
