@@ -1,3 +1,4 @@
-mkdir /tmp/win
-sudo mount -t cifs //192.168.1.23/temp  -o username=mike /tmp/win
+#!/bin/sh
+mkdir /mnt/win
+sudo mount -t cifs //192.168.1.23/temp  -o username=mike /mnt/win
 
