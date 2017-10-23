@@ -53,16 +53,7 @@ printf "Old size - %d MB (%1.2f GB)\n", int ($old / 1048576), ($old / 1073741824
 my $loopback = `losetup -f --show -o $start $image`;
 chop $loopback;
 
-`e2fsck -p -f $loopback`;
-
-if ($? != 0)
-{
-
-   print "There was an error in the file system that can't be automatically fixed... aborting.\n";
-   `losetup -d $loopback`;
-   exit 1;
-
-}
+# removed fs check
 
 $info = `resize2fs -P $loopback 2>&1`;
 
