@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 ct;
 #use autodie;
 use warnings;
